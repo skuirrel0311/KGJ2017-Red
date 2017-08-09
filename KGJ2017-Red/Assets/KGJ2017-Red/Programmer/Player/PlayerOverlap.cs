@@ -38,7 +38,6 @@ public class PlayerOverlap : MonoBehaviour
 	{
 		if (col.gameObject.tag != "Tumbleweed") return;
 
-		Debug.Log ("hit tumbleweed");
 		//todo:当たった草の状態でダメージ量を変化させる
 		Damage(5);
 	}

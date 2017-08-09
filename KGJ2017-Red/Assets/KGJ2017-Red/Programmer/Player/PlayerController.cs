@@ -84,7 +84,6 @@ public class PlayerController : MonoBehaviour
 			movement *= 0.8f;
 			if (IsNearGround ()) 
 			{
-				Debug.Log ("is near ground");
 				stateController.CurrentState = PlayerState.Land;
 			}
 			break;

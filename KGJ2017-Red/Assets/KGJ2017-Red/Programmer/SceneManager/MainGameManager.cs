@@ -8,8 +8,15 @@ public class MainGameManager : BaseManager<MainGameManager>
 	string nextSceneName = "Result";
 	bool isTransition = false;
 
+	[SerializeField]
+	TimeTextController timeText = null;
+	float totalTime = 0.0f;
+
 	void Update()
 	{
+		totalTime += Time.deltaTime;
+		timeText.Second = (int)totalTime;
+
 		//リザルトを完成させるまでは残しておく
 		if (MyInputManager.GetButtonDown (MyInputManager.Button.Start)) 
 		{

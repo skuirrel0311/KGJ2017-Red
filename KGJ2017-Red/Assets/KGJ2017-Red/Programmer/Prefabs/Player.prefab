@@ -697,7 +697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   rotateSpeed: 360
-  jumpPower: 8
+  jumpPower: 5
   landingTime: 0.3
   underCollider: {fileID: 135285463236383186}
   floorLayerMask:

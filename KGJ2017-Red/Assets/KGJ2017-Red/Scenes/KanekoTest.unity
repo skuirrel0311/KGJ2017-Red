@@ -450,6 +450,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114878707729896052, guid: 4dd29ecfe773e4077846658cab8f9998,
+        type: 2}
+      propertyPath: timeText
+      value: 
+      objectReference: {fileID: 1926994459}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dd29ecfe773e4077846658cab8f9998, type: 2}
   m_IsPrefabParent: 0
@@ -549,11 +554,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114197080333305584, guid: 6f6d18b4b8fa74c7fb914121a8274101,
-        type: 2}
-      propertyPath: maxValue
-      value: 10000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f6d18b4b8fa74c7fb914121a8274101, type: 2}
@@ -774,6 +774,12 @@ MonoBehaviour:
   m_col: {fileID: 1711674895}
   width: 0
   stageMinZ: -50
+--- !u!114 &1926994459 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114587428797525950, guid: 6f6d18b4b8fa74c7fb914121a8274101,
+    type: 2}
+  m_PrefabInternal: {fileID: 1386842009}
+  m_Script: {fileID: 11500000, guid: 8ab80e0515f0a41cda841ed45195cf8d, type: 3}
 --- !u!1001 &2081111156
 Prefab:
   m_ObjectHideFlags: 0
