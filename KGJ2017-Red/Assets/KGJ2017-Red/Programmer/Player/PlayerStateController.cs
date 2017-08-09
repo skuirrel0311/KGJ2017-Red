@@ -5,13 +5,11 @@ using UnityEngine;
 
 public enum PlayerState
 {
-	Idle,	//アイドル
-	Run,	//走り
+	OnGround,//走っているか止まっているか
+
 	Jump,	//ジャンプ
-	Fall,	//落下
+	Fall,   //落下
 	Land,	//着地
-	Damage,	//ダメージ
-	invincible, //無敵
 	Dead	//死亡
 }
 
@@ -19,6 +17,7 @@ public class PlayerStateController : MonoBehaviour
 {
 	public Action<PlayerState, PlayerState> OnStateChanged;
 
+	[SerializeField]
 	PlayerState state;
 	public PlayerState CurrentState{
 		get{

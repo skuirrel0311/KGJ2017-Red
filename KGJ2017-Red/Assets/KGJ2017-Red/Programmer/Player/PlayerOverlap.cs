@@ -13,25 +13,24 @@ public class PlayerOverlap : MonoBehaviour
 	[SerializeField]
 	float invincibleTime = 1.0f;
 
+	bool isInvicible = false;
+
 	void Start () {
 		stateController = GetComponent<PlayerStateController> ();
 	}
 
 	public void Damage(int point)
 	{
-		if (stateController.CurrentState == PlayerState.invincible) return;
+		if (isInvicible) return;
 
 		hpGauge.Value = hpGauge.Value - point;
+		isInvicible = true;
+
+		KKUtilities.Delay (invincibleTime, () => isInvicible = false, this);
 
 		if (hpGauge.Value == 0) 
 		{
 			stateController.CurrentState = PlayerState.Dead;
-		} else 
-		{
-			stateController.CurrentState = PlayerState.invincible;
-			KKUtilities.Delay (invincibleTime, () => {
-				stateController.CurrentState = PlayerState.Idle;
-			}, this);
 		}
 	}
 
