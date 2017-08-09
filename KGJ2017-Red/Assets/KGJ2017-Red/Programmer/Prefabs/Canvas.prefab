@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb3c0b4bd64f2ac42ad98bcfbb8f3bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxValue: 10000
+  maxValue: 100
   pointImage: {fileID: 114957638611135518}
 --- !u!114 &114534758979379636
 MonoBehaviour:
@@ -142,7 +142,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '99 : 99'
+  m_Text: 00:00
 --- !u!114 &114549012618485852
 MonoBehaviour:
   m_ObjectHideFlags: 1

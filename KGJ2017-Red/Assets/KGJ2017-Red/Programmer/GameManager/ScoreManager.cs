@@ -7,5 +7,11 @@ public class ScoreManager : BaseManager<ScoreManager>
 	[System.NonSerialized]
 	public float clearTime = 0.0f;
 	[System.NonSerialized]
-	public int hitCont = 0;
+	public int hitCount = 0;
+
+	public void ResetData()
+	{
+		clearTime = 0.0f;
+		hitCount = 0;
+	}
 }

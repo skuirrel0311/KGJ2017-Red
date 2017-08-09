@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ResultManager : BaseManager<ResultManager> 
 {
 	[SerializeField]
-	Text clearTime = null;
+	TimeTextController clearTime = null;
 	[SerializeField]
 	Text hitCount = null;
 	[SerializeField]
@@ -18,8 +18,13 @@ public class ResultManager : BaseManager<ResultManager>
 		base.Start ();
 		ScoreManager score = ScoreManager.I;
 
-		clearTime.text = score.clearTime.ToString();
-		hitCount.text = score.hitCont.ToString ();
+		clearTime.Second = (int)score.clearTime;
+		hitCount.text = score.hitCount.ToString ();
+	}
+
+	void OnDestroy()
+	{
+		
 	}
 
 	void Update()

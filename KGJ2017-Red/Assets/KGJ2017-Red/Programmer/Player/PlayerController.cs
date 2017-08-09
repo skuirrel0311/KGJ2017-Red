@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 	float jumpPower = 5.0f;
 	//着地モーションの時間
 	[SerializeField]
-	float landingTime = 0.3f;
+	float landingTime = 0.1f;
 
 	Transform m_transform;
 	Rigidbody m_body;
@@ -57,10 +57,11 @@ public class PlayerController : MonoBehaviour
 
 		leftStick = MyInputManager.GetAxis (MyInputManager.Axis.LeftStick);
 		movement.x = leftStick.x;
-		movement.z = leftStick.y;
+		//movement.z = leftStick.y;
 		movement.y = 0.0f;
 
 		//todo:z軸に勝手に移動？
+		movement.z = 1.0f;
 
 		movement *= moveSpeed * Time.deltaTime;
 
@@ -88,7 +89,7 @@ public class PlayerController : MonoBehaviour
 			}
 			break;
 		case PlayerState.Land:
-			movement *= 0.1f;
+			movement *= 0.8f;
 			KKUtilities.Delay (landingTime, () => stateController.CurrentState = PlayerState.OnGround, this);
 			break;
 		}
