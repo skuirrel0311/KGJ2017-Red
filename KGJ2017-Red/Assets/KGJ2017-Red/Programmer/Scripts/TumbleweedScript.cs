@@ -7,7 +7,7 @@ public class TumbleweedScript : MonoBehaviour {
     public Rigidbody m_rigidbody { get; private set; }
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         m_rigidbody = GetComponent<Rigidbody>();
 	}
 	

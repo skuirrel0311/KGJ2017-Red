@@ -8,7 +8,7 @@ public class CreateTumbleweedScript : MonoBehaviour {
     GameObject tumbleweedPrefab = null;
     [SerializeField]
     BoxCollider m_col=null;
-    [SerializeField]
+
     float width=0;
 
     [SerializeField]
@@ -16,6 +16,9 @@ public class CreateTumbleweedScript : MonoBehaviour {
     const int MaxTumbleweed = 20;
 
     List<TumbleweedScript> list_Tumbleweeds = new List<TumbleweedScript>();
+
+    [SerializeField]
+    WaitForSeconds wait;
 
     Vector3 instancePosition;
 
@@ -41,13 +44,14 @@ public class CreateTumbleweedScript : MonoBehaviour {
 
     IEnumerator CreateTumbleweed()
     {
-        WaitForSeconds wait = new WaitForSeconds(1.0f);
         while(true)
         {
             for (int i = 0; i < MaxTumbleweed; i++)
             {
                 if (list_Tumbleweeds[i].gameObject.activeSelf == false)
                 {
+                    list_Tumbleweeds[i].m_rigidbody.velocity = zeroVec;
+                    Debug.Log("velocity = " + list_Tumbleweeds[i].m_rigidbody.velocity);
                     list_Tumbleweeds[i].gameObject.SetActive(true);
                     list_Tumbleweeds[i].transform.position = InitializePosition();
                     // Instantiate(tumbleweedPrefab, InitializePosition(), Quaternion.identity);
@@ -74,8 +78,8 @@ public class CreateTumbleweedScript : MonoBehaviour {
             {
                 if(list_Tumbleweeds[i].transform.position.z<stageMinZ)
                 {
-                    list_Tumbleweeds[i].gameObject.SetActive(false);
                     list_Tumbleweeds[i].m_rigidbody.velocity = zeroVec;
+                    list_Tumbleweeds[i].gameObject.SetActive(false);
                 }
             }
         }

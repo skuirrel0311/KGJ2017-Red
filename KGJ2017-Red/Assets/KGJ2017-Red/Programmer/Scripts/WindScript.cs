@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +15,9 @@ public class WindScript : MonoBehaviour {
     [SerializeField]
     float goalPosZ = 0;
 
+    [SerializeField]
+    WaitForSeconds wait = new WaitForSeconds(1.0f);
+
     float stageSizeZ = 0;
 
     List<Rigidbody> tempList = new List<Rigidbody>();
@@ -21,9 +25,16 @@ public class WindScript : MonoBehaviour {
     [SerializeField]
     List<WindSetting> windSettings = new List<WindSetting>();
 
+    //Action<WindSetting> OnWindChenged;
+
 	// Use this for initialization
 	void Start () {
         stageSizeZ = goalPosZ * 2;
+
+        //OnWindChenged += (setting) =>
+        //{
+
+        //};
 	}
 	
 	// Update is called once per frame
@@ -36,6 +47,8 @@ public class WindScript : MonoBehaviour {
             //relativeVelocity = velocity - r.velocity;
             r.velocity += velocity * Time.deltaTime;
         }
+
+        //if (OnWindChenged != null) OnWindChenged.Invoke(new WindSetting());
 	}
 
     void WindDirectionChange()
@@ -70,4 +83,5 @@ public class WindSetting
     public float percent;
     public Vector3 velocity;
     public float coefficient;//空気抵抗
+    public float wait;
 }
