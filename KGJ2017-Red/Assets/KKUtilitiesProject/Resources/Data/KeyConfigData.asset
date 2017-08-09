@@ -39,7 +39,7 @@ MonoBehaviour:
     code: 0
     sub: 
   start:
-    code: 27
+    code: 13
     sub: 
   leftStick:
     xAxisName: LeftHorizontal

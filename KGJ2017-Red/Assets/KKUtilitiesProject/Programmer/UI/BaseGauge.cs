@@ -4,29 +4,28 @@ public class BaseGauge : MonoBehaviour
 {
     [SerializeField]
     protected int maxValue = 10;
-    protected int value;
+	int gaugeValue;
+	public int Value{ 
+		get {
+			return gaugeValue;
+		}
+		set
+		{
+			gaugeValue = Mathf.Clamp (value, 0, maxValue);
+			SetGaugeImage ();
+		}
+	}
+	
 
     bool isCalc = false;
 
     public virtual void Start()
     {
-        value = maxValue;
+		gaugeValue = maxValue;
     }
 
     public virtual void Update()
     {
-        if (!isCalc) return;
-        isCalc = false;
-
-        SetGaugeImage();
-    }
-
-    public void ChangeValue(int point)
-    {
-        isCalc = true;
-
-        value += point;
-        value = Mathf.Clamp(value, 0, maxValue);
     }
 
     protected virtual void SetGaugeImage()

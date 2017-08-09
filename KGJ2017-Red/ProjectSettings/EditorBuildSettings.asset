@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/KGJ2017-Red/Scenes/Title.unity
+    guid: 9f19cb1a0623f4ada98e003486f69ef3
+  - enabled: 1
+    path: Assets/KGJ2017-Red/Scenes/KanekoTest.unity
+    guid: edd7021b07f8a5349b78940413eb9961
+  - enabled: 1
+    path: Assets/KGJ2017-Red/Scenes/Result.unity
+    guid: 00000000000000000000000000000000
