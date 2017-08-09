@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TumbleweedScript : MonoBehaviour {
     public int pow = -1000;
-    Rigidbody m_rigidbody;
+    public Rigidbody m_rigidbody { get; private set; }
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +13,6 @@ public class TumbleweedScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        m_rigidbody.AddForce(0, 0, pow);
+        m_rigidbody.AddForce(0, 0, pow, ForceMode.Force);
 	}
 }
