@@ -26,10 +26,10 @@ public class PlayerController : MonoBehaviour
 			movement, 
 			rotateSpeed * Time.deltaTime / Vector3.Angle(transform.forward, movement));
 
-		transform.LookAt(transform.position + forward);
+		m_transform.LookAt(transform.position + forward);
 
 		//移動
-		transform.Translate(movement, Space.World);
+		m_transform.Translate(movement, Space.World);
 	}
 
 	void Update()
