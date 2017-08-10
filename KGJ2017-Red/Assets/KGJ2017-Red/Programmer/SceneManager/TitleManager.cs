@@ -9,7 +9,7 @@ public class TitleManager : BaseManager<TitleManager>
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return))
+		if(MyInputManager.GetButtonDown(MyInputManager.Button.Start))
         {
             ChangeScene();
         }
