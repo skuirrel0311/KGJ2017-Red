@@ -44,7 +44,6 @@ public class CreateTumbleweedScript : MonoBehaviour {
 
     IEnumerator CreateTumbleweed()
     {
-        WaitForSeconds wait = new WaitForSeconds(1.0f);
         WaitForSeconds wait = new WaitForSeconds(0.1f);
         while(true)
         {
