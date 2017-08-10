@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TumbleweedScript : MonoBehaviour {
+	public enum Type{Normal, Fire }
+	public Type tumbleweedType;
     public int pow = -1000;
     public Rigidbody m_rigidbody { get; private set; }
 

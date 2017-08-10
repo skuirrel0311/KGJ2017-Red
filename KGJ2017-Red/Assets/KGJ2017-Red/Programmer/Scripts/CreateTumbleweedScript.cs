@@ -50,7 +50,7 @@ public class CreateTumbleweedScript : MonoBehaviour {
             else
             {
                 tumbleweed = ((GameObject)Instantiate(fireTumbleweedPrefab)).GetComponent<TumbleweedScript>();
-
+				tumbleweed.tumbleweedType = TumbleweedScript.Type.Fire;
             }
             tumbleweed.transform.parent = this.transform;
             tumbleweed.gameObject.SetActive(false);
