@@ -22,25 +22,33 @@ public class PlayerController : MonoBehaviour
 	Vector3 movement = Vector3.zero;
 
 	[SerializeField]
-	SphereCollider underCollider = null;
-	float underColliderRadius;
+	float nearGround = 0.1f;
 
 	Collider[] hits;
-	[SerializeField]
-	LayerMask floorLayerMask = 0;
 
 	PlayerStateController stateController;
+	PlayerOverlap overlap;
+
+	[SerializeField]
+	Animator m_animator = null;
+
+	[SerializeField]
+	Vector3 gravityVec = new Vector3(0.0f, -0.98f,0.0f);
+
+	Vector3 inerVec;
+
 	void Start()
 	{
 		m_transform = transform;
 		m_body = GetComponent<Rigidbody> ();
 		oldPosition = m_transform.position;
 		stateController = GetComponent<PlayerStateController> ();
-		underColliderRadius = underCollider.transform.lossyScale.x * underCollider.radius;
+		overlap = GetComponent<PlayerOverlap> ();
 	}
 
 	void FixedUpdate()
 	{
+		if (overlap.isHitMobu) movement.z = 0.0f;
 		Vector3 forward = Vector3.Slerp(
 			transform.forward,
 			movement, 
@@ -76,15 +84,21 @@ public class PlayerController : MonoBehaviour
 		switch (stateController.CurrentState) 
 		{
 		case PlayerState.Jump:
+			movement *= 0.4f;
+			inerVec *= 1.01f;
+			m_body.velocity += inerVec * Time.deltaTime;
 			if (m_transform.position.y - oldPosition.y < 0) 
 			{
 				stateController.CurrentState = PlayerState.Fall;
 			}
 			break;
 		case PlayerState.Fall:
-			movement *= 0.8f;
+			movement *= 0.4f;
+			inerVec *= 1.01f;
+			m_body.velocity += inerVec * Time.deltaTime;
 			if (IsNearGround ()) 
 			{
+				m_animator.SetTrigger ("Landing");
 				stateController.CurrentState = PlayerState.Land;
 			}
 			break;
@@ -101,13 +115,14 @@ public class PlayerController : MonoBehaviour
 	{
 		stateController.CurrentState = PlayerState.Jump;
 		m_body.velocity = Vector3.up * jumpPower;
+		m_animator.SetTrigger ("Jumping");
+		inerVec = gravityVec;
 	}
 
 	bool IsNearGround()
 	{
-		hits = Physics.OverlapSphere (underCollider.transform.position, underColliderRadius, floorLayerMask);
-
-		if (hits.Length == 0) return false;
+		if (m_transform.position.y > nearGround)
+			return false;
 
 		return true;
 	}

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 0a3a7750e15af449383d6c2c99377fcb
-timeCreated: 1502319231
+guid: 3e9e510e7234044889b18575a085004a
+timeCreated: 1502329267
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -39,24 +39,24 @@ ModelImporter:
     100062: Character_Ctrl:RightWristEffector
     100064: Character_Ctrl:Spine
     100066: Head
-    100068: Hips1
+    100068: Hips
     100070: LeftArm
     100072: LeftFoot
     100074: LeftForeArm
     100076: LeftHand
     100078: LeftLeg
     100080: LeftUpLeg
-    100082: Neck
-    100084: reference
-    100086: RightArm
-    100088: RightFoot
-    100090: RightForeArm
-    100092: RightHand
-    100094: RightLeg
-    100096: RightUpLeg
-    100098: root
-    100100: runner
-    100102: //RootNode
+    100082: mobu1
+    100084: //RootNode
+    100086: Neck
+    100088: reference
+    100090: RightArm
+    100092: RightFoot
+    100094: RightForeArm
+    100096: RightHand
+    100098: RightLeg
+    100100: RightUpLeg
+    100102: root
     100104: Spine
     400000: Character_Ctrl:ChestEndEffector
     400002: Character_Ctrl:ChestOriginEffector
@@ -92,26 +92,26 @@ ModelImporter:
     400062: Character_Ctrl:RightWristEffector
     400064: Character_Ctrl:Spine
     400066: Head
-    400068: Hips1
+    400068: Hips
     400070: LeftArm
     400072: LeftFoot
     400074: LeftForeArm
     400076: LeftHand
     400078: LeftLeg
     400080: LeftUpLeg
-    400082: Neck
-    400084: reference
-    400086: RightArm
-    400088: RightFoot
-    400090: RightForeArm
-    400092: RightHand
-    400094: RightLeg
-    400096: RightUpLeg
-    400098: root
-    400100: runner
-    400102: //RootNode
+    400082: mobu1
+    400084: //RootNode
+    400086: Neck
+    400088: reference
+    400090: RightArm
+    400092: RightFoot
+    400094: RightForeArm
+    400096: RightHand
+    400098: RightLeg
+    400100: RightUpLeg
+    400102: root
     400104: Spine
-    7400000: runner_damage
+    7400000: mobu_wait
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -129,7 +129,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -137,24 +137,24 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: runner_damage
-      takeName: runner_damage
+      name: mobu_wait
+      takeName: mobu_wait
       firstFrame: 0
-      lastFrame: 20
+      lastFrame: 155
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 1
+      keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
@@ -231,41 +231,41 @@ ModelImporter:
         weight: 1
       - path: root
         weight: 1
+      - path: root/mobu1
+        weight: 1
       - path: root/reference
         weight: 1
-      - path: root/reference/Hips1
+      - path: root/reference/Hips
         weight: 1
-      - path: root/reference/Hips1/LeftUpLeg
+      - path: root/reference/Hips/LeftUpLeg
         weight: 1
-      - path: root/reference/Hips1/LeftUpLeg/LeftLeg
+      - path: root/reference/Hips/LeftUpLeg/LeftLeg
         weight: 1
-      - path: root/reference/Hips1/LeftUpLeg/LeftLeg/LeftFoot
+      - path: root/reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
         weight: 1
-      - path: root/reference/Hips1/RightUpLeg
+      - path: root/reference/Hips/RightUpLeg
         weight: 1
-      - path: root/reference/Hips1/RightUpLeg/RightLeg
+      - path: root/reference/Hips/RightUpLeg/RightLeg
         weight: 1
-      - path: root/reference/Hips1/RightUpLeg/RightLeg/RightFoot
+      - path: root/reference/Hips/RightUpLeg/RightLeg/RightFoot
         weight: 1
-      - path: root/reference/Hips1/Spine
+      - path: root/reference/Hips/Spine
         weight: 1
-      - path: root/reference/Hips1/Spine/LeftArm
+      - path: root/reference/Hips/Spine/LeftArm
         weight: 1
-      - path: root/reference/Hips1/Spine/LeftArm/LeftForeArm
+      - path: root/reference/Hips/Spine/LeftArm/LeftForeArm
         weight: 1
-      - path: root/reference/Hips1/Spine/LeftArm/LeftForeArm/LeftHand
+      - path: root/reference/Hips/Spine/LeftArm/LeftForeArm/LeftHand
         weight: 1
-      - path: root/reference/Hips1/Spine/Neck
+      - path: root/reference/Hips/Spine/Neck
         weight: 1
-      - path: root/reference/Hips1/Spine/Neck/Head
+      - path: root/reference/Hips/Spine/Neck/Head
         weight: 1
-      - path: root/reference/Hips1/Spine/RightArm
+      - path: root/reference/Hips/Spine/RightArm
         weight: 1
-      - path: root/reference/Hips1/Spine/RightArm/RightForeArm
+      - path: root/reference/Hips/Spine/RightArm/RightForeArm
         weight: 1
-      - path: root/reference/Hips1/Spine/RightArm/RightForeArm/RightHand
-        weight: 1
-      - path: root/runner
+      - path: root/reference/Hips/Spine/RightArm/RightForeArm/RightHand
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
@@ -305,10 +305,10 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: root
+    rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2

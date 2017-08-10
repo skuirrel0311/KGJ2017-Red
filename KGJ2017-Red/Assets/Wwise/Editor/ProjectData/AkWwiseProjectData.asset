@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+  - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}'
-    m_lastTimePsrt1: -1351562147
-    m_lastTimePart2: -1999315036
+    m_lastTimePsrt1: 436548480
+    m_lastTimePart2: -1999315028
     List:
     - Name: BGM_Main
-      Path: Default Work Unit\Music\BGM_Main
+      Path: Default Work Unit/Music/BGM_Main
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -32,7 +32,7 @@ MonoBehaviour:
       Guid: e07af9a719a42249af762e224891584e
       maxAttenuation: 0
     - Name: BGM_Title
-      Path: Default Work Unit\Music\BGM_Title
+      Path: Default Work Unit/Music/BGM_Title
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -44,7 +44,7 @@ MonoBehaviour:
       Guid: afce7e260e095b4c9f2253ddf1618411
       maxAttenuation: 0
     - Name: Cancel
-      Path: Default Work Unit\SE\Menu\Cancel
+      Path: Default Work Unit/SE/Menu/Cancel
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -58,7 +58,7 @@ MonoBehaviour:
       Guid: 6d49d26356c2ce4e81877261fe90379d
       maxAttenuation: 0
     - Name: Damage
-      Path: Default Work Unit\SE\Damage
+      Path: Default Work Unit/SE/Damage
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -70,7 +70,7 @@ MonoBehaviour:
       Guid: 2355bec98b91154f87bf8037fe2cb629
       maxAttenuation: 0
     - Name: Decision
-      Path: Default Work Unit\SE\Menu\Decision
+      Path: Default Work Unit/SE/Menu/Decision
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -84,7 +84,7 @@ MonoBehaviour:
       Guid: d8d5cdd1de101444acac99e0ad8fdc39
       maxAttenuation: 0
     - Name: Door
-      Path: Default Work Unit\SE\Door
+      Path: Default Work Unit/SE/Door
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -96,7 +96,7 @@ MonoBehaviour:
       Guid: 529c0408b386ec41b0d34715ee7b307d
       maxAttenuation: 0
     - Name: Footsteps
-      Path: Default Work Unit\SE\Footsteps
+      Path: Default Work Unit/SE/Footsteps
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -108,7 +108,7 @@ MonoBehaviour:
       Guid: a58bfa3d3e9b9c4ea514ed87f80fe623
       maxAttenuation: 0
     - Name: Jump
-      Path: Default Work Unit\SE\Jump
+      Path: Default Work Unit/SE/Jump
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -120,46 +120,46 @@ MonoBehaviour:
       Guid: 07a135a21fc5f64faf5a12242981f370
       maxAttenuation: 0
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{C58C1C24-3D20-4CD2-9C60-26AF9EA69EFC}'
-    m_lastTimePsrt1: 847458134
-    m_lastTimePart2: -1999315179
+    m_lastTimePsrt1: 1516806400
+    m_lastTimePart2: -1999315173
     List: []
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5C790309-AF19-4FE8-B47B-DB058F3E33E8}'
-    m_lastTimePsrt1: 847858134
-    m_lastTimePart2: -1999315179
+    m_lastTimePsrt1: 1516806400
+    m_lastTimePart2: -1999315173
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{10495615-6436-433C-91B8-1B73036D0221}'
-    m_lastTimePsrt1: 847898134
-    m_lastTimePart2: -1999315179
+    m_lastTimePsrt1: 1516806400
+    m_lastTimePart2: -1999315173
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{6DB1FF0C-CA9F-4FB8-BC88-63EF6E049113}'
-    m_lastTimePsrt1: 847768134
-    m_lastTimePart2: -1999315179
+    m_lastTimePsrt1: 1516806400
+    m_lastTimePart2: -1999315173
     List: []
   RtpcWwu:
-  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2F22468A-97AD-494C-9D02-F284871742B6}'
-    m_lastTimePsrt1: 847228134
-    m_lastTimePart2: -1999315179
+    m_lastTimePsrt1: 1516806400
+    m_lastTimePart2: -1999315173
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers\Default Work Unit.wwu
+  - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2DA70870-4E58-46F8-A5DE-6735605C4AD2}'
-    m_lastTimePsrt1: 847948134
-    m_lastTimePart2: -1999315179
+    m_lastTimePsrt1: 1516806400
+    m_lastTimePart2: -1999315173
     List: []
   ExpandedItems:
   - /KGJ2017-Red_WwiseProject
