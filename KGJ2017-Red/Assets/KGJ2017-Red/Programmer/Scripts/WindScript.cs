@@ -6,17 +6,17 @@ using UnityEngine;
 public class WindScript : MonoBehaviour {
 
     [SerializeField]
-    float coefficient;//空気抵抗
-    [SerializeField]
-    Vector3 velocity;//風速
-    [SerializeField]
-    Transform player;
+    Transform player=null;
 
     [SerializeField]
-    float goalPosZ = 0;
+    Transform goal = null;
+
+    [SerializeField]
+    Transform wind = null;
 
     [SerializeField]
     WaitForSeconds wait = new WaitForSeconds(1.0f);
+
 
     float stageSizeZ = 0;
 
@@ -25,16 +25,54 @@ public class WindScript : MonoBehaviour {
     [SerializeField]
     List<WindSetting> windSettings = new List<WindSetting>();
 
-    //Action<WindSetting> OnWindChenged;
+    Action<WindSetting> OnWindChenged;
+    [SerializeField]
+    WindSetting windSetting;
+    public int CurrentWindSettingNumber
+    {
+        get
+        {
+            return windSetting.number;
+        }
+		set{
+			if (windSetting.number == value) return;
+            if (OnWindChenged != null) OnWindChenged.Invoke(windSettings[value]);
+            windSetting.number = value;
+        }
+    }
+    public float CurrentWindSettingWait
+    {
+        get
+        {
+            return windSetting.wait;
+        }
+    }
+    public int CurrentWindSettingEmissionRate
+    {
+        get
+        {
+            return windSetting.emissionRate;
+        }
+    }
+
 
 	// Use this for initialization
 	void Start () {
-        stageSizeZ = goalPosZ * 2;
+        stageSizeZ = goal.position.z * 2;
+        windSetting = windSettings[0];
 
-        //OnWindChenged += (setting) =>
-        //{
-
-        //};
+        OnWindChenged += (setting) =>
+        {
+            windSetting = setting;
+            if (windSetting.velocity.x > 0)
+            {
+                wind.transform.Rotate(new Vector3(0, -120, 0));
+            }
+            else
+            {
+                wind.transform.Rotate(new Vector3(0, 120, 0));
+            }
+        };
 	}
 	
 	// Update is called once per frame
@@ -45,23 +83,21 @@ public class WindScript : MonoBehaviour {
         foreach (Rigidbody r in tempList)
         {
             //relativeVelocity = velocity - r.velocity;
-            r.velocity += velocity * Time.deltaTime;
+            r.velocity +=windSetting.velocity * Time.deltaTime;
         }
-
-        //if (OnWindChenged != null) OnWindChenged.Invoke(new WindSetting());
 	}
 
     void WindDirectionChange()
     {
-        foreach (WindSetting w in windSettings)
+        for(int i=0;i<windSettings.Count;i++)
         {
-            if ((1.0f - ((goalPosZ - player.position.z) / stageSizeZ)) * 100.0f < w.percent)
+            if ((1.0f - ((goal.position.z - player.position.z) / stageSizeZ)) * 100.0f < windSettings[i].percent)
             {
-                coefficient = w.coefficient;
-                velocity = w.velocity;
+                CurrentWindSettingNumber = i;
                 return;
             }
         }
+        
     }
 
     void OnTriggerEnter(Collider col)
@@ -84,4 +120,6 @@ public class WindSetting
     public Vector3 velocity;
     public float coefficient;//空気抵抗
     public float wait;
+    public int number;
+    public int emissionRate;
 }
