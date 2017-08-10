@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" SchemaVersion="80">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{F9F08E18-1AEF-4707-9E96-B9256E661AB0}" ShortID="217711375">
+					<ChildrenList>
+						<Event Name="BGM_Main" ID="{A7F97AE0-A419-4922-AF76-2E224891584E}"/>
+						<Event Name="BGM_Title" ID="{267ECEAF-090E-4C5B-9F22-53DDF1618411}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SE" ID="{AA03B288-3EF6-42DD-8FAE-96581718EB10}" ShortID="784745076">
+					<ChildrenList>
+						<Event Name="Damage" ID="{C9BE5523-918B-4F15-87BF-8037FE2CB629}"/>
+						<Event Name="Footsteps" ID="{3DFA8BA5-9B3E-4E9C-A514-ED87F80FE623}"/>
+						<Event Name="Jump" ID="{A235A107-C51F-4FF6-AF5A-12242981F370}"/>
+						<Event Name="Door" ID="{08049C52-86B3-41EC-B0D3-4715EE7B307D}"/>
+						<Folder Name="Menu" ID="{E95D0B58-0F08-4A93-974D-ADAF5C0DBF7E}" ShortID="167322559">
+							<ChildrenList>
+								<Event Name="Cancel" ID="{63D2496D-C256-4ECE-8187-7261FE90379D}"/>
+								<Event Name="Decision" ID="{D1CDD5D8-10DE-4414-ACAC-99E0AD8FDC39}"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

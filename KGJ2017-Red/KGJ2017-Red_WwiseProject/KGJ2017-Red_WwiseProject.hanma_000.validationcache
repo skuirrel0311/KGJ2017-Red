@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="80">
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="121853423" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="122088577" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="126866773" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="122348756" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="123664648" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="123209330" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="123009191" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Effects\Default Work Unit.wwu" DateLow="124655286" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Effects\Factory Effects.wwu" DateLow="124069904" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Events\Default Work Unit.wwu" DateLow="126341420" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="125911133" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="125375773" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\KGJ2017-Red_WwiseProject.wproj" DateLow="121548216" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="121688315" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="127026875" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="127161968" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Presets\Default Work Unit.wwu" DateLow="127592255" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Queries\Default Work Unit.wwu" DateLow="128322742" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Queries\Factory Queries.wwu" DateLow="128212663" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="127697328" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="128047561" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\States\Default Work Unit.wwu" DateLow="127887460" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Switches\Default Work Unit.wwu" DateLow="127362101" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="128562902" DateHigh="30609598"/>
+	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="126606600" DateHigh="30609598"/>
 	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red_WwiseIntegrationTemp\KGJ2017-Red_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1091257388" DateHigh="30609597"/>
 	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red_WwiseIntegrationTemp\KGJ2017-Red_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1110890488" DateHigh="30609597"/>
 	<ValidationCacheItem File="C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red_WwiseIntegrationTemp\KGJ2017-Red_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1112631667" DateHigh="30609597"/>
