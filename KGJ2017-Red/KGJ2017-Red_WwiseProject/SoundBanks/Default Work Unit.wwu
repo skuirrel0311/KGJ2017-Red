@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6DB1FF0C-CA9F-4FB8-BC88-63EF6E049113}" SchemaVersion="80">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{6DB1FF0C-CA9F-4FB8-BC88-63EF6E049113}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6DB1FF0C-CA9F-4FB8-BC88-63EF6E049113}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="KGJ2017" ID="{8AD2C84D-0B87-4A74-BE44-EF7D8B29B67B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Result" ID="{7C074DD8-3919-476E-847C-B906BF9BF2E7}" WorkUnitID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BGM_Main" ID="{A7F97AE0-A419-4922-AF76-2E224891584E}" WorkUnitID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BGM_Title" ID="{267ECEAF-090E-4C5B-9F22-53DDF1618411}" WorkUnitID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Footsteps" ID="{3DFA8BA5-9B3E-4E9C-A514-ED87F80FE623}" WorkUnitID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Damage" ID="{C9BE5523-918B-4F15-87BF-8037FE2CB629}" WorkUnitID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="GameOver" ID="{64278BDE-D6ED-4FE6-A8FC-FFD4D0E3F039}" WorkUnitID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Jump" ID="{A235A107-C51F-4FF6-AF5A-12242981F370}" WorkUnitID="{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

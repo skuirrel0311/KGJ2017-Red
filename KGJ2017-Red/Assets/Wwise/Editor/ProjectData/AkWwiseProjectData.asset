@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}'
-    m_lastTimePsrt1: -2052345876
-    m_lastTimePart2: -1999315023
+    m_lastTimePsrt1: -441542899
+    m_lastTimePart2: -1999315001
     List:
     - Name: BGM_Main
       Path: Default Work Unit\Music\BGM_Main
@@ -43,20 +43,6 @@ MonoBehaviour:
       ID: 737535402
       Guid: afce7e260e095b4c9f2253ddf1618411
       maxAttenuation: 0
-    - Name: Cancel
-      Path: Default Work Unit\SE\Menu\Cancel
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: SE
-        ObjectType: 4
-      - ElementName: Menu
-        ObjectType: 4
-      - ElementName: Cancel
-        ObjectType: 3
-      ID: -1534630237
-      Guid: 6d49d26356c2ce4e81877261fe90379d
-      maxAttenuation: 0
     - Name: Damage
       Path: Default Work Unit\SE\Damage
       PathAndIcons:
@@ -68,32 +54,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1786804762
       Guid: 2355bec98b91154f87bf8037fe2cb629
-      maxAttenuation: 0
-    - Name: Decision
-      Path: Default Work Unit\SE\Menu\Decision
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: SE
-        ObjectType: 4
-      - ElementName: Menu
-        ObjectType: 4
-      - ElementName: Decision
-        ObjectType: 3
-      ID: -592207705
-      Guid: d8d5cdd1de101444acac99e0ad8fdc39
-      maxAttenuation: 0
-    - Name: Door
-      Path: Default Work Unit\SE\Door
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: SE
-        ObjectType: 4
-      - ElementName: Door
-        ObjectType: 3
-      ID: 1877847629
-      Guid: 529c0408b386ec41b0d34715ee7b307d
       maxAttenuation: 0
     - Name: Footsteps
       Path: Default Work Unit\SE\Footsteps
@@ -107,6 +67,18 @@ MonoBehaviour:
       ID: -1909339098
       Guid: a58bfa3d3e9b9c4ea514ed87f80fe623
       maxAttenuation: 0
+    - Name: GameOver
+      Path: Default Work Unit\SE\GameOver
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SE
+        ObjectType: 4
+      - ElementName: GameOver
+        ObjectType: 3
+      ID: -136681307
+      Guid: de8b2764edd6e64fa8fcffd4d0e3f039
+      maxAttenuation: 0
     - Name: Jump
       Path: Default Work Unit\SE\Jump
       PathAndIcons:
@@ -118,6 +90,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -461315959
       Guid: 07a135a21fc5f64faf5a12242981f370
+      maxAttenuation: 0
+    - Name: Result
+      Path: Default Work Unit\Music\Result
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Result
+        ObjectType: 3
+      ID: 936499202
+      Guid: d84d077c19396e47847cb906bf9bf2e7
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -144,9 +128,18 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{6DB1FF0C-CA9F-4FB8-BC88-63EF6E049113}'
-    m_lastTimePsrt1: 847768134
-    m_lastTimePart2: -1999315179
-    List: []
+    m_lastTimePsrt1: -1558703384
+    m_lastTimePart2: -1999314999
+    List:
+    - Name: KGJ2017
+      Path: Default Work Unit\KGJ2017
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: KGJ2017
+        ObjectType: 7
+      ID: 1768708089
+      Guid: 4dc8d28a870b744abe44ef7d8b29b67b
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -167,6 +160,8 @@ MonoBehaviour:
   - /KGJ2017-Red_WwiseProject/Events/Default Work Unit
   - /KGJ2017-Red_WwiseProject/Events/Default Work Unit/Music
   - /KGJ2017-Red_WwiseProject/Events/Default Work Unit/SE
+  - /KGJ2017-Red_WwiseProject/SoundBanks
+  - /KGJ2017-Red_WwiseProject/SoundBanks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

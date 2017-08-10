@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1768708089" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\KGJ2017</ObjectPath>
+			<ShortName>KGJ2017</ShortName>
+			<Path>KGJ2017.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2633060887" Name="BGM_Main" ObjectPath="\Events\Default Work Unit\Music\BGM_Main"/>
+				<Event Id="737535402" Name="BGM_Title" ObjectPath="\Events\Default Work Unit\Music\BGM_Title"/>
+				<Event Id="1786804762" Name="Damage" ObjectPath="\Events\Default Work Unit\SE\Damage"/>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\SE\Footsteps"/>
+				<Event Id="4158285989" Name="GameOver" ObjectPath="\Events\Default Work Unit\SE\GameOver"/>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\SE\Jump"/>
+				<Event Id="936499202" Name="Result" ObjectPath="\Events\Default Work Unit\Music\Result"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="15439046" Language="SFX">
+					<ShortName>FootStep1.wav</ShortName>
+					<Path>SFX\FootStep1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="70594364" Language="SFX">
+					<ShortName>FootStep2.wav</ShortName>
+					<Path>SFX\FootStep2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="88316701" Language="SFX">
+					<ShortName>GameOver.wav</ShortName>
+					<Path>SFX\GameOver_1C9C67B2.wem</Path>
+				</File>
+				<File Id="128801430" Language="SFX">
+					<ShortName>Door.wav</ShortName>
+					<Path>SFX\Door_1C9C67B2.wem</Path>
+				</File>
+				<File Id="345417015" Language="SFX">
+					<ShortName>Jump.wav</ShortName>
+					<Path>SFX\Jump_1C9C67B2.wem</Path>
+				</File>
+				<File Id="366247388" Language="SFX">
+					<ShortName>Result_Intro.wav</ShortName>
+					<Path>SFX\Result_Intro_1C9C67B2.wem</Path>
+				</File>
+				<File Id="431575568" Language="SFX">
+					<ShortName>Damage.wav</ShortName>
+					<Path>SFX\Damage_1C9C67B2.wem</Path>
+				</File>
+				<File Id="538335222" Language="SFX">
+					<ShortName>He's a Cactus.wav</ShortName>
+					<Path>SFX\He's a Cactus_F17FB28C.wem</Path>
+				</File>
+				<File Id="630254193" Language="SFX">
+					<ShortName>FootStep3.wav</ShortName>
+					<Path>SFX\FootStep3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="821071003" Language="SFX">
+					<ShortName>FootStep4.wav</ShortName>
+					<Path>SFX\FootStep4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="888621858" Language="SFX">
+					<ShortName>Result.wav</ShortName>
+					<Path>SFX\Result_F17FB28C.wem</Path>
+				</File>
+				<File Id="957990108" Language="SFX">
+					<ShortName>Title.wav</ShortName>
+					<Path>SFX\Title_F17FB28C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

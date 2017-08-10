@@ -1,0 +1,26 @@
+Event	ID	Name			Wwise Object Path	Notes
+	737535402	BGM_Title			\Default Work Unit\Music\BGM_Title	
+	936499202	Result			\Default Work Unit\Music\Result	
+	1786804762	Damage			\Default Work Unit\SE\Damage	
+	2385628198	Footsteps			\Default Work Unit\SE\Footsteps	
+	2633060887	BGM_Main			\Default Work Unit\Music\BGM_Main	
+	3833651337	Jump			\Default Work Unit\SE\Jump	
+	4158285989	GameOver			\Default Work Unit\SE\GameOver	
+
+Effect plug-ins	ID	Name	Type				Notes
+	287224143	New_Wwise_Time_Stretch	Wwise Time Stretch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	15439046	FootStep1	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\FootStep1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\FootSteps\FootStep1		302464
+	70594364	FootStep2	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\FootStep2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\FootSteps\FootStep2		302464
+	88316701	GameOver	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\GameOver_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\GameOver		1940464
+	128801430	Door	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\Door_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\Door		302464
+	345417015	Jump	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\Jump_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\Jump		113460
+	366247388	Result_Intro	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\Result_Intro_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Result_Intro		352864
+	431575568	Damage	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\Damage_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\Damage		75664
+	538335222	He's a Cactus	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\He's a Cactus_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\He's a Cactus		16581664
+	630254193	FootStep3	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\FootStep3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\FootSteps\FootStep3		302460
+	821071003	FootStep4	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\FootStep4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SE\FootSteps\FootStep4		302468
+	888621858	Result	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\Result_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Result		2822464
+	957990108	Title	C:\Users\hanma_000\Documents\KGJ2017-Red\KGJ2017-Red\KGJ2017-Red_WwiseProject\.cache\Mac\SFX\Title_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Title		1406152
+
