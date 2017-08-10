@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PostProcessing;
 
 //プレイヤーの当たり判定はここで全て取りたいな
 public class PlayerOverlap : MonoBehaviour 
@@ -15,6 +16,12 @@ public class PlayerOverlap : MonoBehaviour
 
 	bool isInvicible = false;
 
+	[SerializeField]
+	Animator m_Animator = null;
+
+	[SerializeField]
+	PostProcessingProfile profile = null;
+
 	void Start () {
 		stateController = GetComponent<PlayerStateController> ();
 	}
@@ -23,11 +30,12 @@ public class PlayerOverlap : MonoBehaviour
 	{
 		if (isInvicible) return;
 
+		m_Animator.SetTrigger ("Damaged");
 		hpGauge.Value = hpGauge.Value - point;
 		isInvicible = true;
 
 		KKUtilities.Delay (invincibleTime, () => isInvicible = false, this);
-
+		StartCoroutine (DamageEffect ());
 		if (hpGauge.Value == 0) 
 		{
 			stateController.CurrentState = PlayerState.Dead;
@@ -39,7 +47,28 @@ public class PlayerOverlap : MonoBehaviour
 		if (col.gameObject.tag != "Tumbleweed") return;
 
 		//todo:当たった草の状態でダメージ量を変化させる
-		ScoreManager.I.hitCount = ScoreManager.I.hitCount + 1;
+		//ScoreManager.I.hitCount = ScoreManager.I.hitCount + 1;
 		Damage(5);
+	}
+
+	void OnTriggerEnter(Collider col)
+	{
+		if (col.gameObject.tag != "Goal") return;
+
+		MainGameManager.I.GameOver (true);
+	}
+
+	IEnumerator DamageEffect()
+	{
+		profile.vignette.enabled = true;
+
+		yield return KKUtilities.FloatLerp (invincibleTime, (t) => {
+			VignetteModel.Settings setting = profile.vignette.settings;
+			setting.intensity = Mathf.Lerp(0.5f, 0.0f, t * t);
+			profile.vignette.settings = setting;
+		});
+
+		yield return null;
+		profile.vignette.enabled = false;
 	}
 }
