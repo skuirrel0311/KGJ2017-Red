@@ -4,25 +4,25 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="3859212580" Timestamp="131468243257324438"/>
-				<File Name="KGJ2017" Hash="3881171472" Timestamp="131468286675508505"/>
+				<File Name="KGJ2017" Hash="1031289797" Timestamp="131468289153132648"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2258497342" Timestamp="131468286675573535"/>
+				<File Name="" Hash="2258497342" Timestamp="131468289153187694"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{FFFEAD55-B409-49FE-9920-B4474D4B600A}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1813617674" Timestamp="131468286676464301"/>
-				<File Name="KGJ2017" Hash="3881171472" Timestamp="131468286676399255"/>
+				<File Name="Init" Hash="1813617674" Timestamp="131468289154028245"/>
+				<File Name="KGJ2017" Hash="1031289797" Timestamp="131468289153973211"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="318398844" Timestamp="131468286676489315"/>
+				<File Name="" Hash="318398844" Timestamp="131468289154053264"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
