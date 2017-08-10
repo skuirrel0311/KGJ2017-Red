@@ -8,14 +8,29 @@ public class MainGameManager : BaseManager<MainGameManager>
 	string nextSceneName = "Result";
 	bool isTransition = false;
 
+	[SerializeField]
+	TimeTextController timeText = null;
+	float totalTime = 0.0f;
+
 	void Update()
 	{
+		totalTime += Time.deltaTime;
+		timeText.Second = (int)totalTime;
+
+		//リザルトを完成させるまでは残しておく
 		if (MyInputManager.GetButtonDown (MyInputManager.Button.Start)) 
 		{
-			if (isTransition) return;
-			isTransition = true;
-			LoadSceneManager.I.LoadScene(nextSceneName, true, 1.0f, 0.3f);
+			GameOver (false);
 		}
 	}
 
+	public void GameOver(bool gameClear)
+	{
+		if (isTransition) return;
+
+		ScoreManager.I.clearTime = totalTime;
+		//todo:true or false で分岐？
+		isTransition = true;
+		LoadSceneManager.I.LoadScene(nextSceneName, true, 1.0f, 0.3f);
+	}
 }

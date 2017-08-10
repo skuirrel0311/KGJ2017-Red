@@ -8,15 +8,35 @@ public class PlayerController : MonoBehaviour
 	float moveSpeed = 4.0f;
 	[SerializeField]
 	float rotateSpeed = 360.0f;
+	[SerializeField]
+	float jumpPower = 5.0f;
+	//着地モーションの時間
+	[SerializeField]
+	float landingTime = 0.1f;
 
 	Transform m_transform;
+	Rigidbody m_body;
+	Vector3 oldPosition;
 
 	Vector2 leftStick;
 	Vector3 movement = Vector3.zero;
 
+	[SerializeField]
+	SphereCollider underCollider = null;
+	float underColliderRadius;
+
+	Collider[] hits;
+	[SerializeField]
+	LayerMask floorLayerMask = 0;
+
+	PlayerStateController stateController;
 	void Start()
 	{
 		m_transform = transform;
+		m_body = GetComponent<Rigidbody> ();
+		oldPosition = m_transform.position;
+		stateController = GetComponent<PlayerStateController> ();
+		underColliderRadius = underCollider.transform.lossyScale.x * underCollider.radius;
 	}
 
 	void FixedUpdate()
@@ -27,18 +47,68 @@ public class PlayerController : MonoBehaviour
 			rotateSpeed * Time.deltaTime / Vector3.Angle(transform.forward, movement));
 
 		m_transform.LookAt(transform.position + forward);
-
 		//移動
 		m_transform.Translate(movement, Space.World);
 	}
 
 	void Update()
 	{
+		if (stateController.CurrentState == PlayerState.Dead) return;
+
 		leftStick = MyInputManager.GetAxis (MyInputManager.Axis.LeftStick);
 		movement.x = leftStick.x;
-		movement.z = leftStick.y;
+		//movement.z = leftStick.y;
+		movement.y = 0.0f;
+
+		//todo:z軸に勝手に移動？
+		movement.z = 1.0f;
 
 		movement *= moveSpeed * Time.deltaTime;
+
+		//ジャンプ
+		if (MyInputManager.GetButtonDown (MyInputManager.Button.A)) 
+		{
+			if (stateController.CurrentState == PlayerState.OnGround) {
+				ActionJump ();
+			}
+		}
+
+		switch (stateController.CurrentState) 
+		{
+		case PlayerState.Jump:
+			if (m_transform.position.y - oldPosition.y < 0) 
+			{
+				stateController.CurrentState = PlayerState.Fall;
+			}
+			break;
+		case PlayerState.Fall:
+			movement *= 0.8f;
+			if (IsNearGround ()) 
+			{
+				stateController.CurrentState = PlayerState.Land;
+			}
+			break;
+		case PlayerState.Land:
+			movement *= 0.8f;
+			KKUtilities.Delay (landingTime, () => stateController.CurrentState = PlayerState.OnGround, this);
+			break;
+		}
+
+		oldPosition = m_transform.position;
 	}
 
+	void ActionJump()
+	{
+		stateController.CurrentState = PlayerState.Jump;
+		m_body.velocity = Vector3.up * jumpPower;
+	}
+
+	bool IsNearGround()
+	{
+		hits = Physics.OverlapSphere (underCollider.transform.position, underColliderRadius, floorLayerMask);
+
+		if (hits.Length == 0) return false;
+
+		return true;
+	}
 }

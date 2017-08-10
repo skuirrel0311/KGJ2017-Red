@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +13,7 @@ public class CreateTumbleweedScript : MonoBehaviour {
 
     [SerializeField]
     float stageMinZ = 0;
-    const int MaxTumbleweed = 20;
+    const int MaxTumbleweed = 200;
 
     List<TumbleweedScript> list_Tumbleweeds = new List<TumbleweedScript>();
 
@@ -44,6 +44,8 @@ public class CreateTumbleweedScript : MonoBehaviour {
 
     IEnumerator CreateTumbleweed()
     {
+        WaitForSeconds wait = new WaitForSeconds(1.0f);
+        WaitForSeconds wait = new WaitForSeconds(0.1f);
         while(true)
         {
             for (int i = 0; i < MaxTumbleweed; i++)
