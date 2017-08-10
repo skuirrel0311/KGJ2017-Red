@@ -54,7 +54,7 @@
 								<Action Name="" ID="{FFD76566-5ACA-40D7-BD62-93C242600DA9}" ShortID="242478968">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="5.5"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -65,7 +65,7 @@
 								<Action Name="" ID="{F25F032A-2C47-40A4-BDAE-BC74B8F1D6B8}" ShortID="144504998">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="7.5"/>
+										<Property Name="Delay" Type="Real64" Value="4"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -76,7 +76,7 @@
 								<Action Name="" ID="{3B4A2BCC-2BFC-440E-9E59-5691FBE4B1EB}" ShortID="42721440">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="9.5"/>
+										<Property Name="Delay" Type="Real64" Value="6"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
