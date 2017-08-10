@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tumbleweed
   - Goal
+  - Mobu
   layers:
   - Default
   - TransparentFX

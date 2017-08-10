@@ -22,6 +22,8 @@ public class PlayerOverlap : MonoBehaviour
 	[SerializeField]
 	PostProcessingProfile profile = null;
 
+	public bool isHitMobu = false;
+
 	void Start () {
 		stateController = GetComponent<PlayerStateController> ();
 	}
@@ -53,9 +55,21 @@ public class PlayerOverlap : MonoBehaviour
 
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.tag != "Goal") return;
+		if (col.gameObject.tag == "Mobu") 
+		{
+			isHitMobu = true;
+		}
+		if (col.gameObject.tag == "Goal") {
+			MainGameManager.I.GameOver (true);
+		}
+	}
 
-		MainGameManager.I.GameOver (true);
+	void OnTriggerExit(Collider col)
+	{
+		if (col.gameObject.tag == "Mobu") 
+		{
+			isHitMobu = false;
+		}
 	}
 
 	IEnumerator DamageEffect()

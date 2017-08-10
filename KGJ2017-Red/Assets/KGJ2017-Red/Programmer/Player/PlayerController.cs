@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
 	Collider[] hits;
 
 	PlayerStateController stateController;
+	PlayerOverlap overlap;
 
 	[SerializeField]
 	Animator m_animator = null;
@@ -42,10 +43,12 @@ public class PlayerController : MonoBehaviour
 		m_body = GetComponent<Rigidbody> ();
 		oldPosition = m_transform.position;
 		stateController = GetComponent<PlayerStateController> ();
+		overlap = GetComponent<PlayerOverlap> ();
 	}
 
 	void FixedUpdate()
 	{
+		if (overlap.isHitMobu) movement.z = 0.0f;
 		Vector3 forward = Vector3.Slerp(
 			transform.forward,
 			movement, 
