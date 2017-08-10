@@ -28,6 +28,6 @@ public class TimeTextController : MonoBehaviour
 	{
 		float minute = Second / 60;
 
-		timeText.text = minute.ToString("00") + " ： " + (Second - (minute * 60)).ToString("00");
+		timeText.text = minute.ToString("00") + "：" + (Second - (minute * 60)).ToString("00");
 	}
 }
