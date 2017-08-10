@@ -28,7 +28,5 @@ public class ProgressBarController : MonoBehaviour
     void Update()
     {
         ui_Player.position = Vector3.Lerp(ui_Start.position, ui_Goal.position, (1.0f - ((goal.position.z - player.position.z) / stageSizeZ)));
-       
-
     }
 }

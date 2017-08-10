@@ -22,6 +22,11 @@ public class PlayerOverlap : MonoBehaviour
 	[SerializeField]
 	PostProcessingProfile profile = null;
 
+    float damageTime = 1.0f;
+
+    [SerializeField]
+    GameObject effect;
+
 	public bool isHitMobu = false;
 
 	void Start () {
@@ -48,9 +53,29 @@ public class PlayerOverlap : MonoBehaviour
 	{
 		if (col.gameObject.tag != "Tumbleweed") return;
 
+        var t = col.gameObject.GetComponent<TumbleweedScript>();
+
 		//todo:当たった草の状態でダメージ量を変化させる
-		ScoreManager.I.hitCount = ScoreManager.I.hitCount + 1;
-		Damage(5);
+		ScoreManager.I.hitCount = ScoreManager.I.hitCount +1;
+        if (t.tumbleweedType == TumbleweedScript.Type.Fire)
+        {
+            Damage(15);
+            if (effect != null)
+            {
+                effect.SetActive(true);
+            }
+            KKUtilities.Delay(damageTime, () =>
+            {
+                if (effect != null)
+                {
+                    effect.SetActive(false);
+                }
+            }, this);
+        }
+        else
+        {
+            Damage(5);
+        }
 	}
 
 	void OnTriggerEnter(Collider col)

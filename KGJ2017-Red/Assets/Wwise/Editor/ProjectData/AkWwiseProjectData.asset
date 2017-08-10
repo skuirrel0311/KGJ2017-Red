@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{36FA6B6C-66AD-48A9-BB24-92E9C49C254A}'
-    m_lastTimePsrt1: -2032832556
-    m_lastTimePart2: -1999315027
+    m_lastTimePsrt1: -2052345876
+    m_lastTimePart2: -1999315023
     List:
     - Name: BGM_Main
       Path: Default Work Unit\Music\BGM_Main
