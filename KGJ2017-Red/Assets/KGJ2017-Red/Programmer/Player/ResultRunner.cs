@@ -17,9 +17,9 @@ public class ResultRunner : MonoBehaviour
 
 	void OnTriggerEnter(Collider col)
 	{
-		Debug.Log ("hit");
 		if (col.gameObject.tag == "Goal") 
 		{
+            isStop = true;
 			StartCoroutine (ResultManager.I.ShowResult ());
 		}
 	}

@@ -15,7 +15,8 @@ public class CreateTumbleweedScript : MonoBehaviour {
 
     [SerializeField]
     float stageMinZ = 0;
-    const int MaxTumbleweed = 200;
+    [SerializeField]
+    int MaxTumbleweed = 650;
 
     List<TumbleweedScript> list_Tumbleweeds = new List<TumbleweedScript>();
 
