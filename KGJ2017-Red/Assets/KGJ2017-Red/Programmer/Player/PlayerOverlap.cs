@@ -54,6 +54,7 @@ public class PlayerOverlap : MonoBehaviour
 		if (col.gameObject.tag != "Tumbleweed") return;
 
         var t = col.gameObject.GetComponent<TumbleweedScript>();
+		AkSoundEngine.PostEvent ("Damage", gameObject);
 
 		//todo:当たった草の状態でダメージ量を変化させる
 		ScoreManager.I.hitCount = ScoreManager.I.hitCount +1;

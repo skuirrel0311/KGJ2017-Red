@@ -98,6 +98,8 @@ public class PlayerController : MonoBehaviour
 			m_body.velocity += inerVec * Time.deltaTime;
 			if (IsNearGround ()) 
 			{
+				AkSoundEngine.PostEvent ("Footsteps", gameObject);
+
 				m_animator.SetTrigger ("Landing");
 				stateController.CurrentState = PlayerState.Land;
 			}
@@ -113,10 +115,12 @@ public class PlayerController : MonoBehaviour
 
 	void ActionJump()
 	{
+		
 		stateController.CurrentState = PlayerState.Jump;
 		m_body.velocity = Vector3.up * jumpPower;
 		m_animator.SetTrigger ("Jumping");
 		inerVec = gravityVec;
+		AkSoundEngine.PostEvent ("Jump", gameObject);
 	}
 
 	bool IsNearGround()
